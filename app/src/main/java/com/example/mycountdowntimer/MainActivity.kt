@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         override fun onTick(millisUntilFinished: Long) {
             val minute = millisUntilFinished / 1000L / 60L
             val second = millisUntilFinished / 1000L % 60L
-            binding.timerText.text = "%Id:%2$02d" . format(minute, second)
+            binding.timerText.text = "%1d:%2$02d" . format(minute, second)
         }
 
         override fun onFinish() {
